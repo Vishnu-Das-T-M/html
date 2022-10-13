@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title> Online Event Registration Form</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+</head>
+<body>
+	<h3 align="center">EVENT REGISTRATION FORM</h3>
+	<form action="" method="post" target="_self">
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name" placeholder="Enter Name" required maxlength="25" size="25"><br><br>
+	<label for="email">Email:</label>
+	<input type="text" id="email" name="email" required autofocus value="test@example.com"><br><br>
+	<label for="pwd">Password:</label>
+	<input type="password" id="pwd" name="pwd" required minlength="6"><br><br>
+	<label for="categ">Category:</label>
+	<select id="categ" name="categ" required>	
+		<option value="student">Student</option>
+		<option value="employee">Employee</option>
+		<option value="freelancer" selected>Freelancer</option>
+	</select><br><br>
+	<label for="evdat">Event Date:</label>
+	<input type="date" name="date" id="evdat" required><br><br>
+	<label>Tickets:</label>
+	<input type="radio" name="radio" value="1 ticket">1 Ticket
+	<input type="radio" name="radio" value="2 tickets" checked>2 Tickets
+	<input type="radio" name="radio" value="3 tickets">3 Tickets<br><br>
+	<label for="op">Online Payment:</label>
+	<input type="checkbox" name="op" id="op" required><br><br>
+	<label>Notes:</label><br>
+	<textarea rows="5" cols="30" placeholder="Additional comments here..."></textarea><br><br>
+	<input type="submit" name="submit" value="submit">
+	</form>
+</body>
+</html>
